@@ -1,0 +1,90 @@
+/* src/pages/Dashboard.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1c1c1c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h2.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar button.active {
+  background: #0088fe;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.rect-card {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.rect-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.logout-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff3333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.usage-chart-container {
+  width: 100%;
+}
+
+.usage-legend {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.legend-color-box {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.total-hours {
+  font-weight: bold;
+  margin-top: 10px;
+}

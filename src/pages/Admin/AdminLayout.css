@@ -1,0 +1,102 @@
+/* Admin Login Styles */
+
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0d1b2a; /* clean dark blue background */
+  font-family: "Orbitron", sans-serif;
+  overflow: hidden;
+}
+
+.admin-login-box {
+  background: #ffffff; /* white card */
+  padding: 50px 40px;
+  border-radius: 20px;
+  width: 380px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 123, 255, 0.3); /* neon glow */
+  text-align: center;
+  border: 1px solid #00bfff;
+  transition: all 0.3s ease;
+}
+
+.admin-login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 123, 255, 0.5);
+}
+
+.admin-login-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #007fff; /* bright blue */
+  margin-bottom: 30px;
+}
+
+.admin-login-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 1px solid #00bfff;
+  background-color: #f0f8ff; /* very light blue */
+  color: #0d1b2a;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.admin-login-box input::placeholder {
+  color: #007fff;
+}
+
+.admin-login-box input:focus {
+  border-color: #00f5ff;
+  box-shadow: 0 0 8px #00f5ff;
+}
+
+.admin-login-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  background: linear-gradient(90deg, #00bfff, #007fff);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-login-box button:hover {
+  background: linear-gradient(90deg, #007fff, #00f5ff);
+  box-shadow: 0 0 12px #00f5ff, 0 0 24px #00bfff;
+}
+
+/* Logo Styling */
+.login-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  object-fit: contain;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Fade-in animation for card, inputs, button */
+.admin-login-box,
+.admin-login-box input,
+.admin-login-box button {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.admin-login-box input:nth-child(3) { animation-delay: 0.2s; }
+.admin-login-box input:nth-child(4) { animation-delay: 0.4s; }
+.admin-login-box button { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
